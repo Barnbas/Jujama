@@ -1,0 +1,15 @@
+/* styles.css */
+.sidebar .MuiPaper-root {
+  background-color: black !important;
+  color: white !important;
+  margin-top: 4.9%;
+}
+
+.sidebar-item {
+  margin-bottom: 10px;
+}
+
+.sidebar-item .MuiListItemIcon-root {
+  color: white !important;
+  margin-left: 2px;
+}
