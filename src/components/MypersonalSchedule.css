@@ -92,3 +92,50 @@
     margin-left: 2%;
   }
   
+
+  @media (max-width: 600px) {
+    /* Adjust styles for smaller screens here */
+    .my-events-container {
+        margin-left:15%; /* For example, remove the left margin on smaller screens */
+        overflow-x: auto; /* Enable horizontal scrolling */
+    }
+
+    .my-events-container .my-events-header {
+        font-size: 20%;
+    }
+
+    .my-events-container .my-events-dashboard-button {
+        margin-left: 10px;
+        font-size: 50%; /* Adjust the font size for smaller screens */
+    }
+
+   
+    .my-events-container .my-events-selected-event-text {
+        margin-left: 20%;
+        font-size: 55%; /* Adjust the font size for selected-event-text on smaller screens */
+    }
+
+    .my-events-container .my-events-text {
+        font-size: 50%;
+    }
+
+    .my-events-container .my-events-schedule-text {
+        font-size: 12px; /* Adjust the font size for schedule text on smaller screens */
+    }
+
+    .my-events-container .my-events-export-button1,
+    .my-events-container .my-events-export-button2,
+    .my-events-container .my-events-export-button3 {
+        font-size: 7px; /* Adjust the font size for export buttons on smaller screens */
+    }
+
+    .my-events-container .my-events-card {
+        width: 100%; /* Adjust the width of the card on smaller screens */
+        margin-left: 0;
+    }
+    .my-events-container .my-events-card-header .my-events-schedule-text {
+        display: none; /* Hide the vertical divider on smaller screens */
+
+    }
+    /* Add more styles as needed */
+}

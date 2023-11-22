@@ -72,3 +72,46 @@
     margin-left: 65%;
     font-size: 65%;  }
   
+
+
+    @media (max-width: 600px) {
+        /* Adjust styles for smaller screens here */
+        .messages-container {
+            margin-left: 15%; /* For example, remove the left margin on smaller screens */
+            overflow-x: auto; /* Enable horizontal scrolling */
+        }
+    
+        .messages-container .messages-header {
+            margin-left: 0;
+        }
+    
+        .messages-container .messages-dashboard-button {
+            margin-left: 10px;
+            font-size: 50%; /* Adjust the font size for smaller screens */
+        }
+  
+    
+        .messages-container .messages-selected-event-text {
+            margin-left: 20%;
+            font-size: 50%; /* Adjust the font size for selected-event-text on smaller screens */
+        }
+    
+        .messages-container .messages-compose-input {
+            width: 100%; /* Adjust the width of the compose input on smaller screens */
+        }
+    
+        .messages-container .messages-compose-icons {
+            margin-top: 8px; /* Adjust the margin for compose icons on smaller screens */
+        }
+    
+        .messages-container .messages-card {
+            width: 100%; /* Adjust the width of the card on smaller screens */
+            margin-left: 0;
+        }
+        .messages-container  .messages-tab-label > *:not(svg) {
+            display: none;
+        }
+    
+    
+        /* Add more styles as needed */
+    }

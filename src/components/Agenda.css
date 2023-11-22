@@ -58,3 +58,42 @@ font-weight: bold;
     margin-right: 20px; /* Add some right margin for spacing */
   }
   
+
+
+  @media (max-width: 600px) {
+    /* Adjust styles for smaller screens here */
+    .my-events-container {
+        margin-left: 0; /* For example, remove the left margin on smaller screens */
+        overflow-x: auto; /* Enable horizontal scrolling */
+    }
+
+    .my-events-container .header {
+        margin-left: 2%;
+    }
+
+    .my-events-container .button-container .dashboard-button {
+        margin-left: 10px;
+        font-size: 50%; /* Adjust the font size for smaller screens */
+    }
+
+  
+
+    .my-events-container .agenda-card .add-agenda-button {
+        margin-left: 65%; /* Adjust the margin for the add-agenda-button on smaller screens */
+        width: 20%;
+        margin-top: -15%;
+    }
+    .my-events-container .add-agenda-button .add-agenda-text {
+        font-size: 50%;
+    }
+    .my-events-container .button-container .agenda-text {
+        font-size: 50%;
+    }
+
+    .my-events-container .button-container .selected-event-text {
+        margin-left: auto;
+        font-size: 55%; /* Adjust the font size for selected-event-text on smaller screens */
+        margin-right: 10px; /* Adjust the right margin for selected-event-text on smaller screens */
+    }
+    /* Add more styles as needed */
+}
