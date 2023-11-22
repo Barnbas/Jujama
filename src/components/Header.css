@@ -1,0 +1,54 @@
+/* Header.css */
+
+/* Styles for the AppBar */
+.header-app-bar {
+    background-color: #32588D;
+}
+
+/* Styles for the Toolbar */
+.header-app-bar .header-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically in the center */
+}
+
+/* Styles for the User Avatar */
+.header-app-bar .header-avatar {
+    width: 15%;
+}
+
+/* Styles for the Welcome Text */
+.header-app-bar .header-welcome-text {
+    margin-left: auto; /* Push this element to the right */
+    color: white; /* Add color to the text */
+}
+
+/* Styles for the Account Circle Icon */
+.header-app-bar .header-account-icon {
+    color: white; /* Set the icon color to white */
+}
+
+/* Styles for the Menu */
+.header-app-bar .header-menu {
+    vertical-align: top;
+}
+
+/* Styles for the Menu Items */
+.header-app-bar .header-menu-item {
+    cursor: pointer;
+    color: #32588D; /* Set the color for menu items */
+}
+
+/* Additional styles can be added as needed */
+
+/* Media Query for Mobile Screens */
+@media (max-width: 600px) {
+    /* Adjust styles for smaller screens here */
+    .header-app-bar .header-avatar {
+        width: 22%; /* For example, reduce the width of the avatar on smaller screens */
+    }
+    .header-app-bar .header-welcome-text {
+        font-size: 12px; /* Adjust the font size for smaller screens */
+    }
+    /* Add more styles as needed */
+}

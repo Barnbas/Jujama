@@ -1,0 +1,74 @@
+/* Messages.css */
+
+/* Styles for the main container */
+.messages-container {
+    margin-left: 13.5%;
+  }
+  
+  /* Styles for the header */
+  .messages-container  .messages-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3%;
+  }
+  
+  /* Styles for the button container */
+  .messages-container .messages-button-container {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background: #D8D7D7;
+  }
+  
+  /* Styles for the dashboard button */
+  .messages-container .messages-dashboard-button {
+    margin-right: 1px;
+    margin-left: 20px;
+    font-size: 60%;
+  }
+  
+  /* Styles for the vertical divider */
+  .messages-container .messages-vertical-divider {
+    height: 28px;
+    margin: 0 1px;
+    background-color: black;
+  }
+  
+  /* Styles for the tabs */
+  .messages-container .messages-tabs {
+    background-color: white;
+  }
+  
+  /* Styles for the card */
+  .messages-container .messages-card {
+    width: 85%;
+    margin-left: 2%;
+  }
+  
+  /* Styles for the tab labels */
+  .messages-container .messages-tab-label {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styles for the compose form */
+  .messages-container .messages-compose-form {
+    padding: 24px;
+  }
+  
+  /* Styles for the input fields in the compose form */
+  .messages-container .messages-compose-input {
+    height: 40px;
+    width: 70%;
+  }
+  
+  /* Styles for the icons in the compose form */
+  .messages-container .messages-compose-icons {
+    margin-top: 16px;
+  }
+  
+  .messages-container .messages-selected-event-text {
+    margin-left: 65%;
+    font-size: 65%;  }
+  

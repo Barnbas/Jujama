@@ -1,0 +1,75 @@
+/* RequestMeeting.css */
+
+/* Styles for the main container */
+.request-meeting-container {
+    margin-left: 13.5%;
+  }
+  
+  /* Styles for the header */
+  .request-meeting-container  .request-meeting-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3%;
+  }
+  
+  /* Styles for the button container */
+  .request-meeting-container  .request-meeting-button-container {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background: #D8D7D7;
+  }
+  
+  /* Styles for the dashboard button */
+  .request-meeting-container  .request-meeting-dashboard-button {
+    margin-right: 1px;
+    margin-left: 20px;
+    font-size: 60%;
+  }
+  
+  /* Styles for the vertical divider */
+  .request-meeting-container  .request-meeting-vertical-divider {
+    height: 28px;
+    margin: 0 1px;
+    background-color: black;
+  }
+  
+  /* Styles for the text */
+  .request-meeting-container  .request-meeting-text {
+    font-size: 60%;
+  }
+  
+  /* Styles for the selected event text */
+  .request-meeting-container   .request-meeting-selected-event-text {
+    margin-left: 60%;
+    font-size: 65%;
+  }
+  
+  /* Styles for the card header */
+  .request-meeting-container  .request-meeting-card-header {
+    background-color: #D8D7D7;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Styles for the schedule text */
+  .request-meeting-container  .request-meeting-schedule-text {
+    font-size: 75%;
+    font-weight: bold;
+  }
+  
+  /* Styles for the paper */
+  .request-meeting-container  .request-meeting-paper {
+    padding: 16px;
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    overflow: auto;
+    max-height: 400px;
+  }
+  
+  /* Add more styles as needed for other form elements */
+  

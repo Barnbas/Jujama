@@ -1,4 +1,4 @@
-// src/MyEvents.js
+// src/Home.js
 import React, { useEffect, useState } from 'react';
 import {
   Container,
@@ -18,8 +18,9 @@ import { Link } from 'react-router-dom';
 import CategoryIcon from '@mui/icons-material/Category';
 import HomeIcon from '@mui/icons-material/Home';
 import Sidebar from './Sidebar';
+import './Home.css'; // Import the external CSS file
 
-const MyEvents = () => {
+const Home = () => {
   // Sample data for demonstration
   const events = [
     { eventName: 'Event 1', startDate: '2023-01-01', endDate: '2023-01-10' },
@@ -42,52 +43,51 @@ const MyEvents = () => {
   return (
     <>
       <Sidebar />
-      <div style={{ marginLeft: '13.5%' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginLeft: '3%' }}>
+      <div className="home-container">
+        <div className="home-header">
           <Typography variant="h6" gutterBottom>
             <CategoryIcon fontSize="small" style={{ marginRight: '5px' }} /> My Events
           </Typography>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', height: '30px', background: '#D8D7D7' }}>
-          <Button component={Link} to="/Home" color="inherit" style={{ marginRight: 1, marginLeft: 20, fontSize: '60%' }}>
+        <div className="home-button-container">
+          <Button component={Link} to="/Home" color="inherit" className="home-dashboard-button">
             <HomeIcon style={{ marginRight: 2, width: 15 }} />
             Dashboard
           </Button>
-          <Divider orientation="vertical" flexItem sx={{ height: 28, marginX: 1, backgroundColor: 'black' }} />
-          <Typography variant="caption" style={{ fontSize: '60%' }}>
+          <Divider orientation="vertical" flexItem className="home-vertical-divider" />
+          <Typography variant="caption" className="home-my-events-text">
             My Events
           </Typography>
-          <Typography variant="caption" style={{ marginLeft: '65%', fontSize: '65%' }}>
+          <Typography variant="caption" className="home-selected-event-text">
             Selected Event: <span style={{ color: '#32588D' }}>JUJAMA BPS DEMO</span>
           </Typography>
-   
         </div>
         <br />
         <Container>
           <Card>
-            <TableContainer component={Paper}>
+            <TableContainer component={Paper} className="home-table-container">
               <Table>
                 <TableHead>
                   <TableRow>
-                    <TableCell>Event Name</TableCell>
-                    <TableCell>Start Date</TableCell>
-                    <TableCell>End Date</TableCell>
+                    <TableCell className="home-table-cell">Event Name</TableCell>
+                    <TableCell className="home-table-cell">Start Date</TableCell>
+                    <TableCell className="home-table-cell">End Date</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
                   {events.map((event, index) => (
                     <TableRow key={index}>
-                      <TableCell>{event.eventName}</TableCell>
-                      <TableCell>{event.startDate}</TableCell>
-                      <TableCell>{event.endDate}</TableCell>
+                      <TableCell className="home-table-cell">{event.eventName}</TableCell>
+                      <TableCell className="home-table-cell">{event.startDate}</TableCell>
+                      <TableCell className="home-table-cell">{event.endDate}</TableCell>
                       <TableCell>
-                        <Button component={Link} to="/Personal" variant="contained" color="primary" style={{ marginRight: 5, fontSize: '10px' }}>
+                        <Button component={Link} to="/Personal" variant="contained" color="primary" className="home-table-buttons">
                           Schedule
                         </Button>
-                        <Button component={Link} to="/Agenda" variant="contained" color="primary" style={{ marginRight: 5, fontSize: '10px' }}>
+                        <Button component={Link} to="/Agenda" variant="contained" color="primary" className="home-table-buttons">
                           Agenda
                         </Button>
-                        <Button component={Link} to="/Messages" variant="contained" color="primary" style={{ fontSize: '10px' }}>
+                        <Button component={Link} to="/Messages" variant="contained" color="primary" className="home-table-buttons">
                           Messages
                         </Button>
                       </TableCell>
@@ -103,4 +103,4 @@ const MyEvents = () => {
   );
 };
 
-export default MyEvents;
+export default Home;

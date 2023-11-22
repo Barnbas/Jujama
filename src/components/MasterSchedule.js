@@ -1,30 +1,16 @@
+// src/Master.js
 import React, { useState } from 'react';
 import {
-  Container,
-  Card,
-  Divider,
-  Typography,
-  Table,
-  TableContainer,
-  TableHead,
-  TableRow,
-  TableCell,
-  TableBody,
-  Paper,
-  Button,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
-  TextField,
+  Container, Card, Divider, Typography, Table, TableContainer, TableHead, TableRow, TableCell, TableBody, Paper, Button, FormControl, InputLabel, Select, MenuItem
 } from '@mui/material';
 import { Link } from 'react-router-dom';
 import CategoryIcon from '@mui/icons-material/Category';
 import HomeIcon from '@mui/icons-material/Home';
 
 import Sidebar from './Sidebar';
+import './Master.css'; // Import the external styles
 
-const MyEvents = () => {
+const Master = () => {
   const [events, setEvents] = useState([
     {
       organizer: 'John Doe',
@@ -56,70 +42,68 @@ const MyEvents = () => {
   return (
     <>
       <Sidebar />
-      <div style={{ marginLeft: '13.5%' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginLeft: '3%' }}>
+      <div className="master-container">
+        <div className="master-header">
           <Typography variant="h6" gutterBottom>
             <CategoryIcon fontSize="small" style={{ marginRight: '5px' }} /> Master Schedule
           </Typography>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', height: '30px', background: '#D8D7D7' }}>
-          <Button component={Link} to="/Home" color="inherit" style={{ marginRight: 1, marginLeft: 20, fontSize: '60%' }}>
+        <div className="master-button-container">
+          <Button component={Link} to="/Home" color="inherit" className="master-dashboard-button">
             <HomeIcon style={{ marginRight: 2, width: 15 }} />
             Dashboard
           </Button>
-          <Divider orientation="vertical" flexItem sx={{ height: 28, marginX: 1, backgroundColor: 'black' }} />
-          <Typography variant="caption" style={{ fontSize: '60%' }}>
+          <Divider orientation="vertical" flexItem className="master-vertical-divider" />
+          <Typography variant="caption" className="master-my-events-text">
             Master Schedule
           </Typography>
-          <Typography variant="caption" style={{ marginLeft: '60%', fontSize: '65%' }}>
+          <Typography variant="caption" className="master-selected-event-text">
             Selected Event: <span style={{ color: '#32588D' }}>JUJAMA BPS DEMO</span>
           </Typography>
         </div>
         <br />
         <Container>
           <Card>
-          <div style={{ display: 'flex', justifyContent: 'space-between', padding: '1%' }}>
-  <div style={{ display: 'flex', alignItems: 'center', width: '400px' }}>
-    <FormControl variant="outlined" style={{ width: '50%', marginRight: '10px' }} size="small">
-      <InputLabel>Team Member</InputLabel>
-      <Select
-        value={searchTeamMember}
-        onChange={(e) => setSearchTeamMember(e.target.value)}
-        label="Team Member"
-        inputProps={{ style: { height: '30px' } }} // Adjust the height as needed
-      >
-        <MenuItem value="Team A">Team A</MenuItem>
-        <MenuItem value="Team B">Team B</MenuItem>
-      </Select>
-    </FormControl>
+            <div className="master-table-header">
+            <div className="master-filter-container">
+              <FormControl variant="outlined" className="master-filter" size="small">
+                <InputLabel>Team Member</InputLabel>
+                <Select
+                  value={searchTeamMember}
+                  onChange={(e) => setSearchTeamMember(e.target.value)}
+                  label="Team Member"
+                >
+                  <MenuItem value="Team A">Team A</MenuItem>
+                  <MenuItem value="Team B">Team B</MenuItem>
+                </Select>
+              </FormControl>
 
-    <FormControl variant="outlined" style={{ width: '50%' }} size="small">
-      <InputLabel>Company</InputLabel>
-      <Select
-        value={searchCompany}
-        onChange={(e) => setSearchCompany(e.target.value)}
-        label="Company"
-        inputProps={{ style: { maxHeight: '10px' } }} // Adjust the height as needed
-      >
-        <MenuItem value="Company A">Company A</MenuItem>
-        <MenuItem value="Company B">Company B</MenuItem>
-      </Select>
-    </FormControl>
-  </div>
-  <div>
-    <Button variant="contained" color="primary" style={{ marginRight: '5px', fontSize: '12px', height: '30px',backgroundColor: '#66BB6A', color: 'white' }} onClick={handleSearch}>
-      Search
-    </Button>
-    <Button variant="contained" style={{ fontSize: '12px', height: '30px',backgroundColor: '#F7505B', color: 'white' }} onClick={handleClear}>
-      Clear
-    </Button>
-  </div>
-</div>
-            <div style={{ backgroundColor: '#D8D7D7', display: 'flex', justifyContent: 'space-between', padding: '1%' }}>
-              <Typography variant="caption" style={{ fontSize: '75%', fontWeight: 'bold' }}>
+              <FormControl variant="outlined" className="master-filter" size="small">
+                <InputLabel>Company</InputLabel>
+                <Select
+                  value={searchCompany}
+                  onChange={(e) => setSearchCompany(e.target.value)}
+                  label="Company"
+                >
+                  <MenuItem value="Company A">Company A</MenuItem>
+                  <MenuItem value="Company B">Company B</MenuItem>
+                </Select>
+              </FormControl>
+            </div>
+              <div className="master-button-group">
+                <Button variant="contained" color="primary"   className="master-search-button" onClick={handleSearch} size='small'>
+                  Search
+                </Button>&nbsp;
+                <Button variant="contained" className="master-clear-button" onClick={handleClear} size='small' >
+                  Clear
+                </Button>
+              </div>
+            </div>
+
+            <div className="master-table-subheader">
+              <Typography variant="caption" className="master-text">
                 Team Member Schedule
               </Typography>
-             
             </div>
 
             <TableContainer component={Paper}>
@@ -155,4 +139,4 @@ const MyEvents = () => {
   );
 };
 
-export default MyEvents;
+export default Master;

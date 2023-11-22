@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Container, Paper, TextField, Button, Typography } from '@mui/material';
+import './LoginPage.css'; // Import the external styles
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -44,20 +45,14 @@ const LoginPage = () => {
       alert('An error occurred. Please try again.');
     }
   };
-  
-  
-  
-  
-  
-  
 
   return (
-    <Container component="main" maxWidth="xs">
-      <Paper elevation={3} style={{ padding: 20, marginTop: 50, backgroundImage: 'url("/path/to/background-image.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <Typography component="h1" variant="h5" align="center" gutterBottom>
-         Client login
+    <Container component="main" maxWidth="xs" className="login-page-container">
+      <Paper elevation={3} className="login-page-paper">
+        <Typography component="h1" variant="h5" align="center" gutterBottom className="login-page-typography">
+          Client login
         </Typography>
-        <form>
+        <form className="login-page-form">
           <TextField
             variant="outlined"
             margin="normal"
@@ -67,6 +62,7 @@ const LoginPage = () => {
             name="username"
             value={formData.username}
             onChange={handleChange}
+            className="login-page-text-field"
           />
           <TextField
             variant="outlined"
@@ -78,11 +74,12 @@ const LoginPage = () => {
             type="password"
             value={formData.password}
             onChange={handleChange}
+            className="login-page-text-field"
           />
-          <Button type="button" fullWidth variant="contained" color="primary" onClick={resetForm} style={{ marginTop: 10 }}>
+          <Button type="button" fullWidth variant="contained" color="primary" onClick={resetForm} className="login-page-reset-button">
             Reset
           </Button>
-          <Button type="button" fullWidth variant="contained" color="primary" onClick={handleLogin} style={{ marginTop: 10 }}>
+          <Button type="button" fullWidth variant="contained" color="primary" onClick={handleLogin} className="login-page-login-button">
             Login
           </Button>
         </form>

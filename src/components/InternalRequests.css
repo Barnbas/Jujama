@@ -1,0 +1,86 @@
+/* Requests.css */
+
+/* Styles for the main container */
+.requests-container {
+    margin-left: 13.5%;
+  }
+  
+  /* Styles for the header */
+  .requests-container .requests-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3%;
+  }
+  
+  /* Styles for the button container */
+  .requests-container .requests-button-container {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background: #D8D7D7;
+  }
+  
+  /* Styles for the dashboard button */
+  .requests-container .requests-dashboard-button {
+    margin-right: 1px;
+    margin-left: 20px;
+    font-size: 60%;
+  }
+  
+  /* Styles for the vertical divider */
+  .requests-container .requests-vertical-divider {
+    height: 28px;
+    margin: 0 1px;
+    background-color: black;
+  }
+  
+  /* Styles for the My Events text */
+  .requests-container .requests-my-events-text {
+    font-size: 65%;
+    margin-left: 0.5%;
+  }
+  
+  /* Styles for the selected event text */
+  .requests-container .requests-selected-event-text {
+    margin-left: 60%;
+    font-size: 65%;
+  }
+  
+  /* Styles for the form container */
+  .requests-container .requests-form-container {
+    padding: 14px;
+    width: 98%;
+  }
+  
+  /* Styles for the form */
+  .requests-container .requests-form {
+    width: 100%;
+  }
+  
+  /* Styles for form grid items */
+  .requests-container  .requests-form-grid-item {
+    margin-right: 5px;
+  }
+  
+  /* Styles for the form buttons */
+  .requests-container  .requests-form-buttons {
+    width: 48%; /* Adjust the width as needed */
+    background-color: #66BB6A;
+  }
+  .requests-container  .requests-form-buttons1 {
+    margin-left: 3%;
+    width: 48%; /* Adjust the width as needed */
+    background-color: rgb(255, 59, 59);
+  }
+  
+  /* Styles for the request meeting button */
+  .requests-container .requests-request-meeting-button {
+    margin-left: 85%;
+    background-color: #47515B;
+    color: white;
+    font-size: 70%;
+  }
+  
+  /* Additional styles can be added as needed */
+  

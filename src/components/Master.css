@@ -1,0 +1,96 @@
+/* Master.css */
+
+/* Styles for the main container */
+.master-container {
+    margin-left: 13.5%;
+  }
+  
+  /* Styles for the header */
+  .master-container .master-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3%;
+  }
+  
+  /* Styles for the button container */
+  .master-container .master-button-container {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background: #D8D7D7;
+  }
+  
+  /* Styles for the dashboard button */
+  .master-container  .master-dashboard-button {
+    margin-right: 1px;
+    margin-left: 20px;
+    font-size: 60%;
+  }
+  .master-container  .master-table-subheader {
+    background-color: #D8D7D7;
+    padding: 0.5%;
+
+  }
+  
+  /* Styles for the vertical divider */
+  .master-container .master-vertical-divider {
+    height: 28px;
+    margin: 0 1px;
+    background-color: black;
+  }
+  
+  /* Styles for the My Events text */
+  .master-container  .master-my-events-text {
+    font-size: 60%;
+  }
+  
+  /* Styles for the selected event text */
+  .master-container  .master-selected-event-text {
+    margin-left: 65%;
+    font-size: 65%;
+  }
+  
+  /* Styles for the table container */
+  .master-container .master-table-container {
+    margin-top: 20px;
+  }
+  
+  /* Styles for the table buttons */
+  .master-container .master-table-buttons {
+    margin-right: 5px;
+    font-size: 12px;
+    height: 30px;
+  }
+  
+  /* Styles for the table header */
+  .master-container  .master-table-header {
+    /* background-color: #D8D7D7; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+  }
+  
+  /* Styles for the team member schedule text */
+  .master-container .master-team-member-schedule-text {
+    font-size: 75%;
+    font-weight: bold;
+  }
+  .master-container .master-search-button {
+background-color:#66BB6A ;
+}
+.master-container .master-clear-button {
+    background-color:#E24257 ;
+    }
+    /* .master-container .master-filter-container .master-filter{
+min-width:  100%;        } */
+.master-container .master-filter-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styles for the filter */
+  .master-container .master-filter {
+    margin-right: 10px;
+    width: 150px; /* Set the desired width */
+  }

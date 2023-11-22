@@ -1,31 +1,18 @@
+// src/RequestMeeting.js
 import React, { useState } from 'react';
 import {
-  Container,
-  Card,
-  Divider,
-  Typography,Box,
-  Table,
-  TableContainer,
-  TableHead,
-  TableRow,
-  TableCell,
-  TableBody,
-  Paper,  Switch,
-  FormControlLabel,
-  Button,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
-  TextField,
+  Container, Card, Divider, Typography, Box, Table, TableContainer,
+  TableHead, TableRow, TableCell, TableBody, Paper, Switch,
+  FormControlLabel, Button, FormControl, InputLabel, Select, MenuItem, TextField,
 } from '@mui/material';
 import { Link } from 'react-router-dom';
 import CategoryIcon from '@mui/icons-material/Category';
 import HomeIcon from '@mui/icons-material/Home';
 
 import Sidebar from './Sidebar';
+import './RequestMeeting.css'; // Import the external styles
 
-const MyEvents = () => {
+const RequestMeeting = () => {
   const [events, setEvents] = useState([
     {
       organizer: 'John Doe',
@@ -58,71 +45,66 @@ const MyEvents = () => {
   const handleSwitchChange = () => {
     setReadyToSchedule(!readyToSchedule);
   };
+
   return (
     <>
       <Sidebar />
-      <div style={{ marginLeft: '13.5%' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginLeft: '3%' }}>
+      <div className="request-meeting-container">
+        <div className="request-meeting-header">
           <Typography variant="h6" gutterBottom>
             <CategoryIcon fontSize="small" style={{ marginRight: '5px' }} /> Request Meeting
-
           </Typography>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', height: '30px', background: '#D8D7D7' }}>
-          <Button component={Link} to="/Home" color="inherit" style={{ marginRight: 1, marginLeft: 20, fontSize: '60%' }}>
+        <div className="request-meeting-button-container">
+          <Button component={Link} to="/Home" color="inherit" className="request-meeting-dashboard-button">
             <HomeIcon style={{ marginRight: 2, width: 15 }} />
             Dashboard
           </Button>
-          <Divider orientation="vertical" flexItem sx={{ height: 28, marginX: 1, backgroundColor: 'black' }} />
-          <Typography variant="caption" style={{ fontSize: '60%' }}>
-          Request Meeting
-
+          <Divider orientation="vertical" flexItem className="request-meeting-vertical-divider" />
+          <Typography variant="caption" className="request-meeting-text">
+            Request Meeting
           </Typography>
-          <Typography variant="caption" style={{ marginLeft: '60%', fontSize: '65%' }}>
+          <Typography variant="caption" className="request-meeting-selected-event-text">
             Selected Event: <span style={{ color: '#32588D' }}>JUJAMA BPS DEMO</span>
           </Typography>
         </div>
         <br />
         <Container>
           <Card>
-       
-            <div style={{ backgroundColor: '#D8D7D7', display: 'flex', justifyContent: 'space-between', padding: '1%' }}>
-              <Typography variant="caption" style={{ fontSize: '75%', fontWeight: 'bold' }}>
-              Request Meeting
-
+            <div className="request-meeting-card-header">
+              <Typography variant="caption" className="request-meeting-schedule-text">
+                Request Meeting
               </Typography>
-             
             </div>
-            <Paper style={{ padding: 16, width: 500, margin: 'auto', marginTop: 30, overflow: 'auto', maxHeight: 400 }}>
-        <form>
-        <FormControl fullWidth margin="normal" size="small">
-            <Typography variant="subtitle1">Ready to Schedule Meeting:</Typography>
-            <FormControlLabel
-              control={<Switch checked={readyToSchedule} onChange={handleSwitchChange} />}
-              label={readyToSchedule ? 'YES' : 'NO'}
-            />
-          </FormControl>
+            <Paper className="request-meeting-paper">
+              <form>
+                <FormControl fullWidth margin="normal" size="small">
+                  <Typography variant="subtitle1">Ready to Schedule Meeting:</Typography>
+                  <FormControlLabel
+                    control={<Switch checked={readyToSchedule} onChange={handleSwitchChange} />}
+                    label={readyToSchedule ? 'YES' : 'NO'}
+                  />
+                </FormControl>
 
+                <TextField
+                  fullWidth
+                  label="Meeting Requestor"
+                  placeholder="Sudharshan Reddy"
+                  margin="normal"
+                  size="small"
+                />
 
-          <TextField
-            fullWidth
-            label="Meeting Requestor"
-            placeholder="Sudharshan Reddy"
-            margin="normal"
-            size="small"
-          />
+                <FormControl fullWidth margin="normal" size="small">
+                  <InputLabel>Select Participants:</InputLabel>
+                  <Select>
+                    <MenuItem value="No participants selected.">No participants selected.</MenuItem>
+                    <MenuItem value="Participant 1">Participant 1</MenuItem>
+                    <MenuItem value="Participant 2">Participant 2</MenuItem>
+                    {/* Add more participants as needed */}
+                  </Select>
+                </FormControl>
 
-          <FormControl fullWidth margin="normal" size="small">
-            <InputLabel>Select Participants:</InputLabel>
-            <Select>
-              <MenuItem value="No participants selected.">No participants selected.</MenuItem>
-              <MenuItem value="Participant 1">Participant 1</MenuItem>
-              <MenuItem value="Participant 2">Participant 2</MenuItem>
-              {/* Add more participants as needed */}
-            </Select>
-          </FormControl>
-
-          <FormControl fullWidth margin="normal" size="small">
+          <FormControl variant="outlined" fullWidth margin="normal" size="small">
             <InputLabel>Meeting Length:</InputLabel>
             <Select>
               <MenuItem value="Select Meeting Length">Select Meeting Length</MenuItem>
@@ -131,8 +113,11 @@ const MyEvents = () => {
               {/* Add more options as needed */}
             </Select>
           </FormControl>
+        
 
-          <FormControl fullWidth margin="normal" size="small">
+
+        
+          <FormControl variant="outlined" fullWidth margin="normal" size="small">
             <InputLabel>Focus of Meeting:</InputLabel>
             <Select>
               <MenuItem value="Select Focus of Meeting">Select Focus of Meeting</MenuItem>
@@ -144,7 +129,7 @@ const MyEvents = () => {
             </Select>
           </FormControl>
 
-          <FormControl fullWidth margin="normal" size="small">
+          <FormControl variant="outlined" fullWidth margin="normal" size="small">
             <InputLabel>Phase:</InputLabel>
             <Select>
               <MenuItem value="Select">Select</MenuItem>
@@ -188,4 +173,4 @@ const MyEvents = () => {
   );
 };
 
-export default MyEvents;
+export default RequestMeeting;

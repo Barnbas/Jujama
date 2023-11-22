@@ -1,4 +1,25 @@
 /* styles.css */
+/* .sidebar .MuiPaper-root {
+  background-color: black !important;
+  color: white !important;
+  margin-top: 4.9%;
+}
+
+.sidebar-item {
+  margin-bottom: 10px;
+}
+
+.sidebar-item .MuiListItemIcon-root {
+  color: white !important;
+  margin-left: 2px;
+} */
+
+
+/* styles.css */
+
+/* styles.css */
+
+/* Styles for the Sidebar */
 .sidebar .MuiPaper-root {
   background-color: black !important;
   color: white !important;
@@ -12,4 +33,22 @@
 .sidebar-item .MuiListItemIcon-root {
   color: white !important;
   margin-left: 2px;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 600px) {
+  /* Adjust styles for smaller screens here */
+  .sidebar .MuiPaper-root {
+    margin-top: 16%; /* For example, remove the top margin on smaller screens */
+    width: 14%;
+  }
+  .sidebar-item {
+    margin-bottom: 15px; /* Adjust the margin for sidebar items on smaller screens */
+  }
+
+  /* Hide labels on mobile screens */
+  .sidebar-item .MuiTypography-root {
+    display: none;
+  }
+  /* Add more styles as needed */
 }
