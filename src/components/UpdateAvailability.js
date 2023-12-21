@@ -20,11 +20,11 @@ const Update = () => {
     <>
       <Sidebar />
       <div className="update-container">
-        <div className="update-header">
+        {/* <div className="update-header">
           <Typography variant="h6" gutterBottom>
             <CategoryIcon fontSize="small" style={{ marginRight: '5px' }} /> Update Availability
           </Typography>
-        </div>
+        </div> */}
         <div className="update-button-container">
           <Button component={Link} to="/Home" color="inherit" className="update-dashboard-button">
             <HomeIcon style={{ marginRight: 2, width: 15 }} />

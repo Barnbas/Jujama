@@ -43,11 +43,11 @@ const Master = () => {
     <>
       <Sidebar />
       <div className="master-container">
-        <div className="master-header">
+        {/* <div className="master-header">
           <Typography variant="h6" gutterBottom>
             <CategoryIcon fontSize="small" style={{ marginRight: '5px' }} /> Master Schedule
           </Typography>
-        </div>
+        </div> */}
         <div className="master-button-container">
           <Button component={Link} to="/Home" color="inherit" className="master-dashboard-button">
             <HomeIcon style={{ marginRight: 2, width: 15 }} />

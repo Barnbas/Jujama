@@ -60,11 +60,11 @@ const Requests = () => {
     <>
       <Sidebar />
       <div className="requests-container">
-        <div className="requests-header">
+        {/* <div className="requests-header">
           <Typography variant="h6" gutterBottom>
             <CategoryIcon fontSize="small" style={{ marginRight: '5px' }} />Internal Requests
           </Typography>
-        </div>
+        </div> */}
         <div className="requests-button-container">
           <Button component={Link} to="/Home" color="inherit" className="requests-dashboard-button">
             <HomeIcon style={{ marginRight: 2, width: 15 }} />

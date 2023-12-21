@@ -44,25 +44,17 @@ const Home = () => {
     <>
       <Sidebar />
       <div className="home-container">
-        <div className="home-header">
-          <Typography variant="h6" gutterBottom>
-            <CategoryIcon fontSize="small" style={{ marginRight: '5px' }} /> My Events
-          </Typography>
-        </div>
+       
         <div className="home-button-container">
-          <Button component={Link} to="/Home" color="inherit" className="home-dashboard-button">
-            <HomeIcon style={{ marginRight: 2, width: 15 }} />
+          <Button component={Link} to="/Home" color="inherit">
+            <HomeIcon style={{ marginRight: '2px', width: '15px' }} />
             Dashboard
           </Button>
-          <Divider orientation="vertical" flexItem className="home-vertical-divider" />
-          <Typography variant="caption" className="home-my-events-text">
+          <Divider orientation="vertical" flexItem />
+          <Typography variant="caption">
             My Events
           </Typography>
-          <Typography variant="caption" className="home-selected-event-text">
-            Selected Event: <span style={{ color: '#32588D' }}>JUJAMA BPS DEMO</span>
-          </Typography>
         </div>
-        <br />
         <Container>
           <Card>
             <TableContainer component={Paper} className="home-table-container">
@@ -72,6 +64,7 @@ const Home = () => {
                     <TableCell className="home-table-cell">Event Name</TableCell>
                     <TableCell className="home-table-cell">Start Date</TableCell>
                     <TableCell className="home-table-cell">End Date</TableCell>
+                    <TableCell></TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>

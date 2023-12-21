@@ -2,116 +2,115 @@
 
 /* Styles for the main container */
 .messages-container {
-    margin-left: 13.5%;
+  margin-left: 5%;
+}
+
+/* Styles for the header */
+.messages-container .messages-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3%;
+}
+
+/* Styles for the button container */
+.messages-container .messages-button-container {
+  display: flex;
+  align-items: center;
+  height: 40px; /* Increased height for better visibility */
+  background: #f0f0f0; /* Light gray background */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Styles for the dashboard button */
+.messages-container .messages-dashboard-button {
+  margin-right: 15px; /* Increased margin for better spacing */
+  font-size: 14px;
+  color: #555; /* Dark gray text color */
+}
+
+/* Styles for the vertical divider */
+.messages-container .messages-vertical-divider {
+  height: 40px; /* Increased height for better visibility */
+  margin: 0 10px; /* Adjusted margin for better spacing */
+  background-color: #888; /* Medium gray color */
+}
+
+/* Styles for the tabs */
+.messages-container .messages-tabs {
+  background-color: #fff; /* White background */
+}
+
+/* Styles for the card */
+.messages-container .messages-card {
+  width: 85%;
+  margin-left: 2%;
+}
+
+/* Styles for the tab labels */
+.messages-container .messages-tab-label {
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for the compose form */
+.messages-container .messages-compose-form {
+  padding: 20px; /* Adjusted padding for better spacing */
+}
+
+/* Styles for the input fields in the compose form */
+.messages-container .messages-compose-input {
+  height: 40px;
+  width: 100%; /* Adjusted width for full width on smaller screens */
+}
+
+/* Styles for the icons in the compose form */
+.messages-container .messages-compose-icons {
+  margin-top: 12px; /* Adjusted margin for compose icons */
+}
+
+.messages-container .messages-selected-event-text {
+  margin-left: 50%; /* Adjusted margin for selected-event-text */
+  font-size: 16px; /* Adjusted font size for better visibility */
+}
+
+@media (max-width: 600px) {
+  /* Adjust styles for smaller screens here */
+  .messages-container {
+    margin-left: 0; /* Remove the left margin on smaller screens */
+    overflow-x: auto; /* Enable horizontal scrolling */
   }
-  
-  /* Styles for the header */
-  .messages-container  .messages-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 3%;
+
+  .messages-container .messages-header {
+    margin-left: 0;
   }
-  
-  /* Styles for the button container */
-  .messages-container .messages-button-container {
-    display: flex;
-    align-items: center;
-    height: 30px;
-    background: #D8D7D7;
-  }
-  
-  /* Styles for the dashboard button */
+
   .messages-container .messages-dashboard-button {
-    margin-right: 1px;
-    margin-left: 20px;
-    font-size: 60%;
+    margin-left: 10px;
+    font-size: 12px; /* Adjusted font size for dashboard button on smaller screens */
   }
-  
-  /* Styles for the vertical divider */
-  .messages-container .messages-vertical-divider {
-    height: 28px;
-    margin: 0 1px;
-    background-color: black;
-  }
-  
-  /* Styles for the tabs */
-  .messages-container .messages-tabs {
-    background-color: white;
-  }
-  
-  /* Styles for the card */
-  .messages-container .messages-card {
-    width: 85%;
-    margin-left: 2%;
-  }
-  
-  /* Styles for the tab labels */
-  .messages-container .messages-tab-label {
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Styles for the compose form */
-  .messages-container .messages-compose-form {
-    padding: 24px;
-  }
-  
-  /* Styles for the input fields in the compose form */
-  .messages-container .messages-compose-input {
-    height: 40px;
-    width: 70%;
-  }
-  
-  /* Styles for the icons in the compose form */
-  .messages-container .messages-compose-icons {
-    margin-top: 16px;
-  }
-  
+
   .messages-container .messages-selected-event-text {
-    margin-left: 65%;
-    font-size: 65%;  }
-  
+    margin-left: 20%; /* Adjusted margin for selected-event-text on smaller screens */
+    font-size: 14px; /* Adjusted font size for better visibility */
+  }
 
+  .messages-container .messages-compose-input {
+    width: 100%; /* Adjust the width of the compose input on smaller screens */
+  }
 
-    @media (max-width: 600px) {
-        /* Adjust styles for smaller screens here */
-        .messages-container {
-            margin-left: 15%; /* For example, remove the left margin on smaller screens */
-            overflow-x: auto; /* Enable horizontal scrolling */
-        }
-    
-        .messages-container .messages-header {
-            margin-left: 0;
-        }
-    
-        .messages-container .messages-dashboard-button {
-            margin-left: 10px;
-            font-size: 50%; /* Adjust the font size for smaller screens */
-        }
-  
-    
-        .messages-container .messages-selected-event-text {
-            margin-left: 20%;
-            font-size: 50%; /* Adjust the font size for selected-event-text on smaller screens */
-        }
-    
-        .messages-container .messages-compose-input {
-            width: 100%; /* Adjust the width of the compose input on smaller screens */
-        }
-    
-        .messages-container .messages-compose-icons {
-            margin-top: 8px; /* Adjust the margin for compose icons on smaller screens */
-        }
-    
-        .messages-container .messages-card {
-            width: 100%; /* Adjust the width of the card on smaller screens */
-            margin-left: 0;
-        }
-        .messages-container  .messages-tab-label > *:not(svg) {
-            display: none;
-        }
-    
-    
-        /* Add more styles as needed */
-    }
+  .messages-container .messages-compose-icons {
+    margin-top: 8px; /* Adjust the margin for compose icons on smaller screens */
+  }
+
+  .messages-container .messages-card {
+    width: 100%; /* Adjust the width of the card on smaller screens */
+    margin-left: 0;
+  }
+
+  .messages-container .messages-tab-label > *:not(svg) {
+    display: none;
+  }
+
+  /* Add more styles as needed */
+}

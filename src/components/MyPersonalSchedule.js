@@ -29,11 +29,11 @@ const MyEvents = () => {
     <>
       <Sidebar />
       <div className="my-events-container">
-        <div className="my-events-header">
+        {/* <div className="my-events-header">
           <Typography variant="h6" gutterBottom>
             <CategoryIcon fontSize="small" style={{ marginRight: '5px' }} /> My Personal Schedule
           </Typography>
-        </div>
+        </div> */}
         <div className="my-events-button-container">
           <Button component={Link} to="/Home" color="inherit" className="my-events-dashboard-button">
             <HomeIcon style={{ marginRight: 2, width: 15 }} />

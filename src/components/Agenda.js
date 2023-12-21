@@ -94,11 +94,7 @@ const Agenda = () => {
     <>
       <Sidebar />
       <div className="my-events-container">
-        <div className="header">
-          <Typography variant="h6" gutterBottom>
-            <CategoryIcon fontSize="small"  /> My Agenda
-          </Typography>
-        </div>
+      
         <div className="button-container">
           <Button component={Link} to="/Home" color="inherit" className="dashboard-button">
             <HomeIcon style={{ marginRight: 2, width: 15 }} />
@@ -108,9 +104,7 @@ const Agenda = () => {
           <Typography variant="caption" className="agenda-text">
             My Agenda
           </Typography>
-          <Typography variant="caption" className="selected-event-text">
-            Selected Event: <span style={{ color: '#32588D' }}>JUJAMA BPS DEMO</span>
-          </Typography>
+      
         </div>
         <br />
         <Container>

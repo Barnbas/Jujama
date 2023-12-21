@@ -29,11 +29,11 @@ const Messages = () => {
       {/* Assuming Sidebar is imported properly */}
       <Sidebar />
       <div className="messages-container">
-        <div className="messages-header">
+        {/* <div className="messages-header">
           <Typography variant="h6" gutterBottom>
             <CategoryIcon fontSize="small" style={{ marginRight: '5px' }} /> Messages
           </Typography>
-        </div>
+        </div> */}
         <div className="messages-button-container">
           <Button component={Link} to="/Home" color="inherit" className="messages-dashboard-button">
             <HomeIcon style={{ marginRight: 2, width: 15 }} />

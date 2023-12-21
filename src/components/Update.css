@@ -2,109 +2,126 @@
 
 /* Styles for the main container */
 .update-container {
-    margin-left: 13.5%;
-  }
-  
-  /* Styles for the header */
-  .update-container .update-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 3%;
-  }
-  
-  /* Styles for the button container */
-  .update-container .update-button-container {
-    display: flex;
-    align-items: center;
-    height: 30px;
-    background: #D8D7D7;
-  }
-  
-  /* Styles for the dashboard button */
-  .update-container .update-dashboard-button {
-    margin-right: 1px;
-    margin-left: 20px;
-    font-size: 60%;
-  }
-  
-  /* Styles for the vertical divider */
-  .update-container .update-vertical-divider {
-    height: 28px;
-    margin: 0 1px;
-    background-color: black;
-  }
-  
-  /* Styles for the text */
-  .update-container  .update-text {
-    font-size: 60%;
-  }
-  
-  /* Styles for the selected event text */
-  .update-container .update-selected-event-text {
-    margin-left: 60%;
-    font-size: 65%;
-  }
-  
-  /* Styles for the card header */
-  .update-container .update-card-header {
-    background-color: #D8D7D7;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  /* Styles for the availability text */
-  .update-container .update-availability-text {
-    font-size: 75%;
-    font-weight: bold;
-  }
-  
-  /* Styles for the paper */
-  .update-container .update-paper {
-    padding: 16px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Styles for the availability chips */
-  .update-container .availability-chip {
-    margin: 2px;
-    padding: 5px;
-    font-size: small;
-  }
-  
-  .update-container .available {
-    color: green;
-  }
-  
-  /* Add more styles as needed for other status chips... */
-  
-  .update-container .break {
-    color: orange;
-  }
-  .update-container .Confirmed {
-    color: blue;
-  }
-  .update-container .Optional {
-    color: brown;
-  }
-  .update-container .Notavailable{
-    color: red;
-  }
-  
-  .update-container .session {
-    color: purple;
-  }
-  
-  /* Styles for the tip text */
-  .update-container .update-tip {
-    margin-bottom: 10px;
-    font-size: small;
-    background-color: #D8D7D7;
-    padding: 1%;
-  }
-  
-  /* Add more styles as needed for other elements... */
-  
+  margin-left: 5%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the header */
+.update-container .update-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3%;
+  margin-bottom: 20px;
+}
+
+/* Styles for the button container */
+.update-container .update-button-container {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background: #ccc;
+  border-radius: 5px;
+}
+
+/* Styles for the dashboard button */
+.update-container .update-dashboard-button {
+  margin-right: 15px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #555;
+  padding: 7px 12px;
+  border-radius: 5px;
+}
+
+/* Styles for the vertical divider */
+.update-container .update-vertical-divider {
+  height: 30px;
+  margin: 0 10px;
+  background-color: #888;
+}
+
+/* Styles for the text */
+.update-container .update-text {
+  font-size: 12px;
+}
+
+/* Styles for the selected event text */
+.update-container .update-selected-event-text {
+  margin-left: 60%;
+  font-size: 12px;
+}
+
+/* Styles for the card header */
+.update-container .update-card-header {
+  background-color: #f0f0f0;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styles for the availability text */
+.update-container .update-availability-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Styles for the paper */
+.update-container .update-paper {
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Styles for the availability chips */
+.update-container .availability-chip {
+  margin: 5px;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.update-container .available {
+  color: #4caf50;
+  background-color: #e8f5e9;
+}
+
+.update-container .break {
+  color: #ff9800;
+  background-color: #fff3e0;
+}
+
+.update-container .Confirmed {
+  color: #2196f3;
+  background-color: #e3f2fd;
+}
+
+.update-container .Optional {
+  color: #795548;
+  background-color: #d7ccc8;
+}
+
+.update-container .Notavailable {
+  color: #f44336;
+  background-color: #ffebee;
+}
+
+.update-container .session {
+  color: #9c27b0;
+  background-color: #f3e5f5;
+}
+
+/* Styles for the tip text */
+.update-container .update-tip {
+  margin-bottom: 20px;
+  font-size: 14px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Add more styles as needed for other elements... */

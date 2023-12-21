@@ -50,11 +50,7 @@ const RequestMeeting = () => {
     <>
       <Sidebar />
       <div className="request-meeting-container">
-        <div className="request-meeting-header">
-          <Typography variant="h6" gutterBottom>
-            <CategoryIcon fontSize="small" style={{ marginRight: '5px' }} /> Request Meeting
-          </Typography>
-        </div>
+   
         <div className="request-meeting-button-container">
           <Button component={Link} to="/Home" color="inherit" className="request-meeting-dashboard-button">
             <HomeIcon style={{ marginRight: 2, width: 15 }} />

@@ -1,99 +1,96 @@
-/* MyEvents.css */
+/* Agenda.css */
 
-/* Styles for .button-container */
-.my-events-container  {
-  
-    margin-left: 13.4%;
-  }
-  .my-events-container .header  {
-  
-    margin-left: 2.5%;
-  }
-.my-events-container .button-container {
-    display: flex;
-    align-items: center;
+.my-events-container {
+  margin-left: 5%;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Box shadow for elevation */
+}
 
-    background-color: rgb(211, 207, 207);
+.button-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* Smaller margin for compactness */
+}
 
-  }
-  
-  /* Styles for .dashboard-button */
-  .my-events-container .button-container .dashboard-button {
-    margin-right: 1px;
-    margin-left: 20px;
-    font-size: 60%;
-  }
-  
-  /* Styles for .vertical-divider */
-  .my-events-container .button-container .vertical-divider {
-    height: 28px;
-    margin: 0 1px;
-    background-color: black;
-  }
-  .my-events-container .agenda-card .agenda-card1 {
-    height: 40px;
-    margin: 0 1px;
-    padding: 0.2%;
-    background-color: rgb(211, 207, 207);
-  }
-  .my-events-container .agenda-card .agenda-card1 .agenda-text {
-font-weight: bold;
-  }
-  .my-events-container .agenda-card .add-agenda-button {
-    height: 30px;
-    margin-left: 75%;
-    background-color:#66BB6A;
-    color: white;
-  }
-  
-  /* Styles for .agenda-text */
-  .my-events-container .button-container .agenda-text {
-    font-size: 60%;
-  }
-  
-  /* Styles for .selected-event-text */
-  .my-events-container .button-container .selected-event-text {
-    margin-left: auto; /* Push this element to the right */
-    font-size: 65%;
-    margin-right: 20px; /* Add some right margin for spacing */
-  }
-  
+.button-container button {
+  margin-right: 10px; /* Smaller margin for compactness */
+  background-color: #007bff; /* Attractive blue color */
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px; /* Smaller font size */
+}
 
+.agenda-card {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff; /* White background */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for elevation */
+}
 
-  @media (max-width: 600px) {
-    /* Adjust styles for smaller screens here */
-    .my-events-container {
-        margin-left: 0; /* For example, remove the left margin on smaller screens */
-        overflow-x: auto; /* Enable horizontal scrolling */
-    }
+.agenda-card1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
-    .my-events-container .header {
-        margin-left: 2%;
-    }
+.add-agenda-button {
+  background-color: #28a745; /* Green color */
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px; /* Smaller font size */
+}
 
-    .my-events-container .button-container .dashboard-button {
-        margin-left: 10px;
-        font-size: 50%; /* Adjust the font size for smaller screens */
-    }
+.add-agenda-text {
+  margin-left: 8px; /* Smaller margin for compactness */
+  font-weight: bold;
+  font-size: 12px; /* Smaller font size */
+}
 
-  
+.table-container {
+  margin-top: 20px;
+}
 
-    .my-events-container .agenda-card .add-agenda-button {
-        margin-left: 65%; /* Adjust the margin for the add-agenda-button on smaller screens */
-        width: 20%;
-        margin-top: -15%;
-    }
-    .my-events-container .add-agenda-button .add-agenda-text {
-        font-size: 50%;
-    }
-    .my-events-container .button-container .agenda-text {
-        font-size: 50%;
-    }
+.manage-agenda-dialog {
+  padding: 20px;
+  background-color: #fff; /* White background */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Box shadow for elevation */
+}
 
-    .my-events-container .button-container .selected-event-text {
-        margin-left: auto;
-        font-size: 55%; /* Adjust the font size for selected-event-text on smaller screens */
-        margin-right: 10px; /* Adjust the right margin for selected-event-text on smaller screens */
-    }
-    /* Add more styles as needed */
+.dialog-title {
+  text-align: center;
+  font-size: 18px; /* Smaller font size */
+  margin-bottom: 15px; /* Smaller margin for compactness */
+}
+
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+.text-field {
+  margin-bottom: 20px;
+}
+
+/* Media Query for Responsiveness */
+@media screen and (max-width: 600px) {
+  .my-events-container {
+    margin-left: 5px;
+  }
 }

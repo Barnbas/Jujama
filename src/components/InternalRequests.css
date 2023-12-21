@@ -2,85 +2,104 @@
 
 /* Styles for the main container */
 .requests-container {
-    margin-left: 13.5%;
-  }
-  
-  /* Styles for the header */
-  .requests-container .requests-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 3%;
-  }
-  
-  /* Styles for the button container */
-  .requests-container .requests-button-container {
-    display: flex;
-    align-items: center;
-    height: 30px;
-    background: #D8D7D7;
-  }
-  
-  /* Styles for the dashboard button */
-  .requests-container .requests-dashboard-button {
-    margin-right: 1px;
-    margin-left: 20px;
-    font-size: 60%;
-  }
-  
-  /* Styles for the vertical divider */
-  .requests-container .requests-vertical-divider {
-    height: 28px;
-    margin: 0 1px;
-    background-color: black;
-  }
-  
-  /* Styles for the My Events text */
-  .requests-container .requests-my-events-text {
-    font-size: 65%;
-    margin-left: 0.5%;
-  }
-  
-  /* Styles for the selected event text */
-  .requests-container .requests-selected-event-text {
-    margin-left: 60%;
-    font-size: 65%;
-  }
-  
-  /* Styles for the form container */
-  .requests-container .requests-form-container {
-    padding: 14px;
-    width: 98%;
-  }
-  
-  /* Styles for the form */
-  .requests-container .requests-form {
-    width: 100%;
-  }
-  
-  /* Styles for form grid items */
-  .requests-container  .requests-form-grid-item {
-    margin-right: 5px;
-  }
-  
-  /* Styles for the form buttons */
-  .requests-container  .requests-form-buttons {
-    width: 48%; /* Adjust the width as needed */
-    background-color: #66BB6A;
-  }
-  .requests-container  .requests-form-buttons1 {
-    margin-left: 3%;
-    width: 48%; /* Adjust the width as needed */
-    background-color: rgb(255, 59, 59);
-  }
-  
-  /* Styles for the request meeting button */
-  .requests-container .requests-request-meeting-button {
-    margin-left: 85%;
-    background-color: #47515B;
-    color: white;
-    font-size: 70%;
-  }
-  
-  /* Additional styles can be added as needed */
-  
+  margin-left: 5%;
+  padding: 15px; /* Adjusted padding for a more compact look */
+  background-color: #f8f9fa; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Box shadow for elevation */
+}
+
+/* Styles for the header */
+.requests-container .requests-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3%;
+  margin-bottom: 15px; /* Increased margin for better separation */
+}
+
+/* Styles for the button container */
+.requests-container .requests-button-container {
+  display: flex;
+  align-items: center;
+  height: 40px; /* Increased height for better visibility */
+  background: #f1f1f1; /* Light gray background color */
+  border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* Styles for the dashboard button */
+.requests-container .requests-dashboard-button {
+  margin-right: 10px; /* Adjusted margin for better spacing */
+  font-size: 14px; /* Increased font size for better readability */
+}
+
+/* Styles for the vertical divider */
+.requests-container .requests-vertical-divider {
+  height: 30px; /* Increased height for better visibility */
+  margin: 0 10px; /* Adjusted margin for better spacing */
+  background-color: #333; /* Dark gray color */
+}
+
+/* Styles for the My Events text */
+.requests-container .requests-my-events-text {
+  font-size: 14px; /* Increased font size for better readability */
+  margin-left: 1%; /* Adjusted margin for better spacing */
+}
+
+/* Styles for the selected event text */
+.requests-container .requests-selected-event-text {
+  margin-left: 50%;
+  font-size: 14px; /* Increased font size for better readability */
+}
+
+/* Styles for the form container */
+.requests-container .requests-form-container {
+  padding: 20px; /* Adjusted padding for better spacing */
+  width: 100%;
+  background-color: #fff; /* White background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for elevation */
+}
+
+/* Styles for the form */
+.requests-container .requests-form {
+  width: 100%;
+}
+
+/* Styles for form grid items */
+.requests-container .requests-form-grid-item {
+  margin-right: 15px; /* Adjusted margin for better spacing */
+}
+
+/* Styles for the form buttons */
+.requests-container .requests-form-buttons,
+.requests-container .requests-form-buttons1 {
+  width: 48%;
+  margin-top: 15px; /* Adjusted margin for better spacing */
+  padding: 10px; /* Adjusted padding for better spacing */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; /* Increased font size for better readability */
+}
+
+.requests-container .requests-form-buttons {
+  background-color: #66BB6A; /* Attractive green color */
+  color: #fff; /* White text color */
+}
+
+.requests-container .requests-form-buttons1 {
+  margin-left: 2%;
+  background-color: #ff3b3b; /* Attractive red color */
+  color: #fff; /* White text color */
+}
+
+/* Styles for the request meeting button */
+.requests-container .requests-request-meeting-button {
+  margin-left: 70%; /* Adjusted margin for better positioning */
+  background-color: #47515B; /* Dark gray color */
+  color: #fff; /* White text color */
+  font-size: 12px; /* Adjusted font size for better readability */
+}
+
+/* Additional styles can be added as needed */

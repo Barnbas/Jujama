@@ -2,140 +2,132 @@
 
 /* Styles for the main container */
 .my-events-container {
-    margin-left: 13.5%;
+  margin-left: 5%;
+}
+
+/* Styles for the header */
+.my-events-container .my-events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3%;
+}
+
+/* Styles for the button container */
+.my-events-container .my-events-button-container {
+  display: flex;
+  align-items: center;
+  height: 40px; /* Increased height for better visibility */
+  background: #f0f0f0; /* Light gray background */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Styles for the dashboard button */
+.my-events-container .my-events-dashboard-button {
+  margin-right: 15px; /* Increased margin for better spacing */
+  font-size: 14px;
+  color: #555; /* Dark gray text color */
+}
+
+/* Styles for the vertical divider */
+.my-events-container .my-events-vertical-divider {
+  height: 40px; /* Increased height for better visibility */
+  margin: 0 10px; /* Adjusted margin for better spacing */
+  background-color: #888; /* Medium gray color */
+}
+
+/* Styles for the text */
+.my-events-container .my-events-text {
+  font-size: 12px;
+  color: #333; /* Dark gray text color */
+}
+
+/* Styles for the selected event text */
+.my-events-container .my-events-selected-event-text {
+  margin-left: 50%;
+  font-size: 16px; /* Adjusted font size for better consistency */
+  font-weight: bold;
+  color: #555; /* Dark gray text color */
+}
+
+/* Styles for the card header */
+.my-events-container .my-events-card-header {
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styles for the schedule text */
+.my-events-container .my-events-schedule-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333; /* Dark gray text color */
+}
+
+/* Styles for the action buttons */
+.my-events-container .my-events-action-buttons {
+  margin-top: 10px;
+  display: flex;
+}
+
+/* Styles for the export buttons */
+.my-events-container .my-events-export-button1,
+.my-events-container .my-events-export-button2,
+.my-events-container .my-events-export-button3 {
+  margin-right: 5px;
+  font-size: 12px; /* Adjusted font size for better visibility */
+}
+
+/* Styles for the card */
+.my-events-container .my-events-card {
+  width: 85%;
+  margin-left: 2%;
+}
+
+@media (max-width: 600px) {
+  /* Adjust styles for smaller screens here */
+  .my-events-container {
+    margin-left: 0; /* Remove the left margin on smaller screens */
+    overflow-x: auto; /* Enable horizontal scrolling */
   }
-  
-  /* Styles for the header */
+
   .my-events-container .my-events-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 3%;
+    font-size: 18px; /* Adjusted font size for header on smaller screens */
   }
-  
-  /* Styles for the button container */
-  .my-events-container .my-events-button-container {
-    display: flex;
-    align-items: center;
-    height: 30px;
-    background: #D8D7D7;
-  }
-  
-  /* Styles for the dashboard button */
+
   .my-events-container .my-events-dashboard-button {
-    margin-right: 1px;
-    margin-left: 20px;
-    font-size: 60%;
+    margin-left: 10px;
+    font-size: 12px; /* Adjusted font size for dashboard button on smaller screens */
   }
-  
-  /* Styles for the vertical divider */
-  .my-events-container .my-events-vertical-divider {
-    height: 28px;
-    margin: 0 1px;
-    background-color: black;
+
+  .my-events-container .my-events-selected-event-text {
+    margin-left: 20%;
+    font-size: 14px; /* Adjusted font size for selected-event-text on smaller screens */
   }
-  
-  /* Styles for the text */
+
   .my-events-container .my-events-text {
-    font-size: 60%;
+    font-size: 12px; /* Adjusted font size for text on smaller screens */
   }
-  
-  /* Styles for the selected event text */
-  .my-events-container  .my-events-selected-event-text {
-    margin-left: 60%;
-    font-size: 65%;
-  }
-  
-  /* Styles for the card header */
-  .my-events-container .my-events-card-header {
-    background-color: #D8D7D7;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  /* Styles for the schedule text */
+
   .my-events-container .my-events-schedule-text {
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 12px; /* Adjusted font size for schedule text on smaller screens */
   }
-  
-  /* Styles for the action buttons */
-  .my-events-container .my-events-action-buttons {
-    margin-top: 10px;
-    display: flex;
-  }
-  
-  /* Styles for the export buttons */
-  .my-events-container .my-events-export-button1 {
-    margin-right: 5px;
-    font-size: 10px;
-    background-color:#47515B ;
-  }
-  
-  .my-events-container .my-events-export-button2 {
-    margin-right: 5px;
-    font-size: 10px;
-    background-color:#5090D9 ;
 
-  }
+  .my-events-container .my-events-export-button1,
+  .my-events-container .my-events-export-button2,
   .my-events-container .my-events-export-button3 {
-    margin-right: 5px;
-    font-size: 10px;
-    background-color:#66BB6A ;
-
+    font-size: 10px; /* Adjusted font size for export buttons on smaller screens */
   }
-  /* Styles for the card */
+
   .my-events-container .my-events-card {
-    width: 85%;
-    margin-left: 2%;
+    width: 100%; /* Adjust the width of the card on smaller screens */
+    margin-left: 0;
   }
-  
 
-  @media (max-width: 600px) {
-    /* Adjust styles for smaller screens here */
-    .my-events-container {
-        margin-left:15%; /* For example, remove the left margin on smaller screens */
-        overflow-x: auto; /* Enable horizontal scrolling */
-    }
-
-    .my-events-container .my-events-header {
-        font-size: 20%;
-    }
-
-    .my-events-container .my-events-dashboard-button {
-        margin-left: 10px;
-        font-size: 50%; /* Adjust the font size for smaller screens */
-    }
-
-   
-    .my-events-container .my-events-selected-event-text {
-        margin-left: 20%;
-        font-size: 55%; /* Adjust the font size for selected-event-text on smaller screens */
-    }
-
-    .my-events-container .my-events-text {
-        font-size: 50%;
-    }
-
-    .my-events-container .my-events-schedule-text {
-        font-size: 12px; /* Adjust the font size for schedule text on smaller screens */
-    }
-
-    .my-events-container .my-events-export-button1,
-    .my-events-container .my-events-export-button2,
-    .my-events-container .my-events-export-button3 {
-        font-size: 7px; /* Adjust the font size for export buttons on smaller screens */
-    }
-
-    .my-events-container .my-events-card {
-        width: 100%; /* Adjust the width of the card on smaller screens */
-        margin-left: 0;
-    }
-    .my-events-container .my-events-card-header .my-events-schedule-text {
-        display: none; /* Hide the vertical divider on smaller screens */
-
-    }
-    /* Add more styles as needed */
+  .my-events-container .my-events-card-header .my-events-schedule-text {
+    display: none; /* Hide the vertical divider on smaller screens */
+  }
+  /* Add more styles as needed */
 }

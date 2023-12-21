@@ -1,107 +1,60 @@
 /* Home.css */
 
-/* Styles for the main container */
 .home-container {
-    margin-left: 13.5%;
+  margin-left: 5%;
+  padding: 15px; /* Slightly reduced padding for a more compact look */
+  background-color: #f8f9fa; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Box shadow for elevation */
 }
 
-/* Styles for the header */
 .home-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 3%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-/* Styles for the button container */
 .home-button-container {
-    display: flex;
-    align-items: center;
-    height: 30px;
-    background: #D8D7D7;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* Increased margin for better separation */
 }
 
-/* Styles for the dashboard button */
-.home-container .home-dashboard-button {
-    margin-right: 1px;
-    margin-left: 20px;
-    font-size: 60%;
+.home-button-container button {
+  margin-right: 15px; /* Increased margin for better spacing */
+  background-color: #007bff; /* Attractive blue color */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-/* Styles for the vertical divider */
-.home-vertical-divider {
-    height: 28px;
-    margin: 0 1px;
-    background-color: black;
-}
-
-/* Styles for the My Events text */
-.home-container .home-my-events-text {
-    font-size: 60%;
-    margin-left: 2px;
-}
-
-/* Styles for the selected event text */
-.home-container  .home-selected-event-text {
-    margin-left: 65%;
-    font-size: 65%;
-}
-
-/* Styles for the table container */
 .home-table-container {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
-/* Styles for the table buttons */
-.home-container .home-table-buttons {
-    margin-right: 5px;
-    font-size: 10px;
+.home-table-cell {
+  font-weight: bold;
 }
 
-/* Styles for the table cells */
-.home-container.home-table-cell {
-    font-size: 12px;
+.home-table-buttons button {
+  margin-right: 10px; /* Slightly increased margin for better spacing */
+  background-color: #28a745; /* Green color */
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-/* Media Query for Mobile Screens */
-/* Media Query for Mobile Screens */
-@media (max-width: 600px) {
-    /* Adjust styles for smaller screens here */
-    .home-container {
-        margin-left:15%; /* For example, remove the left margin on smaller screens */
-        overflow-x: auto; /* Enable horizontal scrolling */
-    }
+/* Media Query for Responsiveness */
+@media screen and (max-width: 600px) {
+  .home-container {
+    margin-left: 5px;
+  }
 
-    .home-header {
-        margin-left: 0;
-    }
-
-    .home-container .home-dashboard-button {
-        margin-left: 10px;
-        font-size: 40%; /* Adjust the font size for smaller screens */
-    }
-
-  
-    .home-container .home-my-events-text {
-        font-size: 50%;
-        margin-left: 2px;
-    }
-
-    .home-container  .home-selected-event-text {
-        margin-left: 10%;
-        font-size: 50%;
-    }
-
-    .home-container .home-table-buttons {
-        font-size: 5px; /* Adjust the font size for table buttons on smaller screens */
-    }
-
-    .home-container .home-table-cell {
-        font-size: 9px; /* Adjust the font size for table cells on smaller screens */
-    }
-
-    /* Add more styles as needed */
+  .home-button-container button {
+    font-size: 12px; /* Smaller font size for better readability on smaller screens */
+  }
 }
-
-
-
